@@ -13,7 +13,7 @@ export default function Footer() {
             {/* Parte superior: branding y secciones */}
             <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
               {/* Logo y claim */}
-              <div className="col-span-1">
+              <div className="col-span-1 hidden md:block">
                 <h2 className="text-4xl font-header1 uppercase mb-4 tracking-widest">Genèse</h2>
                 <p className="text-sm font-body opacity-60">Belleza eterna. Inspiración auténtica.</p>
               </div>

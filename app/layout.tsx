@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-genese-beige text-genese-dark">
         <Navbar />
 
-        <div className="relative min-h-[230vh]">
+        <div className="relative md:min-h-[230vh] min-h-[275vh]">
           {/* Contenido principal */}
           <main className="relative z-10 bg-white">
             {children}
