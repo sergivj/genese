@@ -1,7 +1,6 @@
 
 import HeroVideo from '@/src/components/(Home)/Hero'
 import SaberMasUnderline from '@/src/components/SaberMasUnderline';
-import { ArrowRightIcon } from "lucide-react";
 
 export default function Home() {
   return (
