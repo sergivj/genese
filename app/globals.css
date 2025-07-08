@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+/* 🎨 GENESSE COLORS */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --genese-gold: #C5A253;
+  --genese-cream: #E0DBCA;
+  --genese-beige: #F9F2E6;
+  --genese-ivory: #F1EDE1;
+  --genese-dark: #100F0F;
+  --genese-black: #0A0A0A;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Background colors */
+.bg-genese-gold   { background-color: var(--genese-gold); }
+.bg-genese-cream  { background-color: var(--genese-cream); }
+.bg-genese-beige  { background-color: var(--genese-beige); }
+.bg-genese-ivory  { background-color: var(--genese-ivory); }
+.bg-genese-dark   { background-color: var(--genese-dark); }
+.bg-genese-black  { background-color: var(--genese-black); }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Text colors */
+.text-genese-gold   { color: var(--genese-gold); }
+.text-genese-cream  { color: var(--genese-cream); }
+.text-genese-beige  { color: var(--genese-beige); }
+.text-genese-ivory  { color: var(--genese-ivory); }
+.text-genese-dark   { color: var(--genese-dark); }
+.text-genese-black  { color: var(--genese-black); }
+
+/* Border colors */
+.border-genese-gold   { border-color: var(--genese-gold); }
+.border-genese-cream  { border-color: var(--genese-cream); }
+.border-genese-beige  { border-color: var(--genese-beige); }
+.border-genese-ivory  { border-color: var(--genese-ivory); }
+.border-genese-dark   { border-color: var(--genese-dark); }
+.border-genese-black  { border-color: var(--genese-black); }
+
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-serif;
 }
