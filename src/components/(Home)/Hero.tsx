@@ -20,7 +20,7 @@ export default function HeroVideo({ videoSrc, overlay = true, children }: HeroVi
         try {
           await video.play();
         } catch (err) {
-          console.warn('❌ Autoplay bloqueado por el navegador');
+          console.warn('❌ Autoplay bloqueado por el navegador: ' + err);
         }
       };
       tryPlay();
