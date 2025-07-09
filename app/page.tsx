@@ -1,4 +1,5 @@
 
+import ProductCarousel from '@/src/components/(Carousel)/ProductCarousel';
 import HeroVideo from '@/src/components/(Home)/Hero'
 import SaberMasUnderline from '@/src/components/SaberMasUnderline';
 
@@ -16,27 +17,10 @@ export default function Home() {
             </div>
         </div>
       </HeroVideo>
-
-
-      <section className="py-16 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8">Características</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Fácil de usar</h3>
-              <p>Interfaz intuitiva para una experiencia fluida.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Personalización</h3>
-              <p>Adapta la plataforma a tus necesidades específicas.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Soporte 24/7</h3>
-              <p>Asistencia técnica disponible en todo momento.</p>
-            </div>
-          </div>
-        </div>  
-      </section>
+      <div className="min-h-screen bg-genese-ivory">
+        <ProductCarousel />
+      </div>
+      
     </main>
   );
 }

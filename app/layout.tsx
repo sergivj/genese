@@ -1,30 +1,30 @@
 import Navbar from "@/src/components/(Navbars)/Navbar";
-import "./globals.css";
 import Footer from "@/src/components/(Footer)/Footer";
+import "./globals.css";
+import { Cormorant_Garamond } from "next/font/google";
 
-
-export const metadata = {
-  title: "Genese",
-  description: "Tu plataforma inteligente",
-};
-
+const cormorant = Cormorant_Garamond({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es">
-      <body className="bg-genese-beige text-genese-dark">
+    <html lang="es" className={cormorant.variable}>
+      <body className="bg-genese-beige text-genese-dark relative">
         <Navbar />
 
-        <div className="relative md:min-h-[230vh] min-h-[275vh]">
-          {/* Contenido principal */}
-          <main className="relative z-10 bg-white">
-            {children}
-          </main>
+        {/* Contenido principal sobre el footer */}
+        <main className="relative z-10">
+          {children}
 
-          {/* Footer en capa inferior */}
-          <Footer />
+          {/* Pantalla extra de scroll para revelar el footer */}
+          <div className="h-screen" />
+        </main>
 
-        </div>
+        {/* Footer en capa inferior, fijo al fondo */}
+        <Footer />
       </body>
     </html>
   );

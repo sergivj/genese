@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Pause, Play } from 'lucide-react';
 
 interface HeroVideoProps {
@@ -12,6 +12,21 @@ interface HeroVideoProps {
 export default function HeroVideo({ videoSrc, overlay = true, children }: HeroVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      const tryPlay = async () => {
+        try {
+          await video.play();
+        } catch (err) {
+          console.warn('❌ Autoplay bloqueado por el navegador');
+        }
+      };
+      tryPlay();
+    }
+  }, []);
+  
 
   const toggleVideo = () => {
     if (!videoRef.current) return;
@@ -36,6 +51,7 @@ export default function HeroVideo({ videoSrc, overlay = true, children }: HeroVi
         loop
         muted
         playsInline
+        preload="auto"
       />
 
       {/* Capa oscura opcional */}

@@ -6,11 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        h1: ['var(--font-cormorant)', 'serif'],
-        h2: ['var(--font-lato)', 'sans-serif'],
-        body: ['var(--font-lato)', 'sans-serif'],
-      },
+      sans: ['var(--font-cormorant)', 'ui-sans-serif', 'system-ui'],
     }
   },
   plugins: [],
