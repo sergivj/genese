@@ -2,6 +2,7 @@ import Navbar from "@/src/components/(Navbars)/Navbar";
 import Footer from "@/src/components/(Footer)/Footer";
 import "./globals.css";
 import { Cormorant_Garamond } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 const cormorant = Cormorant_Garamond({
   weight: ["400", "700"],
@@ -12,6 +13,7 @@ const cormorant = Cormorant_Garamond({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={cormorant.variable}>
+      <Analytics />
       <body className="bg-genese-beige text-genese-dark relative">
         <Navbar />
 
