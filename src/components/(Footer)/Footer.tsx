@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
 
               {/* Columnas navegación */}
-              <div className="grid grid-cols-1 md:grid-cols-3 col-span-3 gap-8 text-sm font-body">
+              <div className="grid grid-cols-2 md:grid-cols-3 col-span-3 gap-8 text-sm font-body">
                 <div className="flex flex-col gap-2">
                   <h3 className="font-header2 text-base mb-2">Colección</h3>
                   <a href="#" className="hover:underline">Anillos</a>
