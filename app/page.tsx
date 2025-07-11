@@ -6,7 +6,7 @@ import SideText from '@/src/components/SideText';
 // import TwoSides from '@/src/components/TwoSides';
 import GirlRing from '@/public/joyas/girl_ring.png';
 // import GirlRing2 from '@/public/joyas/girl_ring2.png';
-// import LuxuryHighlight from '@/src/components/LuxuryHighlight';
+import LuxuryHighlight from '@/src/components/LuxuryHighlight';
 
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </HeroVideo>
 
-      {/* <LuxuryHighlight /> */}
+      <LuxuryHighlight />
 
       {/* <TwoSides /> */}
 
