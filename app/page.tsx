@@ -8,6 +8,16 @@ import GirlRing from '@/public/girl_ring.png';
 // import GirlRing2 from '@/public/girl_ring2.png';
 import LuxuryHighlight from '@/src/components/LuxuryHighlight';
 
+import A17 from '@/public/a17.png';
+import A17ns from '@/public/A17_ns.png';
+import P1 from '@/public/p1.png';
+import P2 from '@/public/p2.png';
+import P3 from '@/public/p3.png';
+import P1ns from '@/public/p1_ns.png';
+import P2ns from '@/public/p2_ns.png';
+import P3ns from '@/public/p3_ns.png';
+
+
 
 export default function Home() {
 
@@ -16,8 +26,8 @@ export default function Home() {
       id: 1,
       name: 'ANILLO GENESE Nº1',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      image: '/a17.png',
-      icon: '/a17_ns.png',
+      image: A17,
+      icon: A17ns,
       available: true
     },
     
@@ -25,24 +35,24 @@ export default function Home() {
       id: 3,
       name: 'PULSERA GENESE Nº1',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      image: '/p1.png',
-      icon: '/p1_ns.png',
+      image: P1,
+      icon: P1ns,
       available: true
     },
     {
       id: 4,
       name: 'PULSERA GENESE Nº2',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      image: '/p2.png',
-      icon: '/p2_ns.png',
+      image: P2,
+      icon: P2ns,
       available: false
     },
     {
       id: 5,
       name: 'PULSERA GENESE Nº3',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      image: '/p3.png',
-      icon: '/p3_ns.png',
+      image: P3,
+      icon: P3ns,
       available: false
     },
   ];

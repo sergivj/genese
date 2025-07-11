@@ -5,7 +5,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import SaberMasUnderline from '../SaberMasUnderline';
 
-export default function ProductCarousel({products}: {products: any[]}) {
+export default function ProductCarousel({products}: {products: {
+    id: number;
+    name: string;
+    description: string;
+    image: { src: string };
+    icon: { src: string };
+    available: boolean;
+  }[]
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = products[activeIndex];
 
@@ -15,7 +23,7 @@ export default function ProductCarousel({products}: {products: any[]}) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
       viewport={{ once: true }}
-      className="w-full min-h-screen bg-genese-beige text-genese-dark px-6 md:px-20 md:py-24 md:pt-0 md:pb-0 pt-24 pb-16 flex flex-col-reverse lg:flex-row items-center justify-center gap-12 relative"
+      className="w-full min-h-screen bg-genese-ivory text-genese-dark px-6 md:px-20 md:py-24 md:pt-0 md:pb-0 pt-24 pb-16 flex flex-col-reverse lg:flex-row items-center justify-center gap-12 relative"
     >
       {/* Título fijo superior */}
       <motion.div
@@ -49,7 +57,7 @@ export default function ProductCarousel({products}: {products: any[]}) {
               }`}
             >
               <Image
-                src={product.icon || product.image}
+                src={product.icon.src || product.image.src}
                 alt={product.name}
                 width={80}
                 height={80}
@@ -66,7 +74,7 @@ export default function ProductCarousel({products}: {products: any[]}) {
     <AnimatePresence mode="wait">
       <motion.img
         key={active.id}
-        src={active.image}
+        src={active.image.src}
         alt={active.name}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
