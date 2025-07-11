@@ -31,7 +31,7 @@ export default function LuxuryHighlight() {
           <div className="w-full md:w-[400px]">
             <div className="relative w-full h-[500px] mb-4 overflow-hidden">
               <Image
-                src="/joyas/savoir.png"
+                src="/savoir.png"
                 alt="Anillo estrella"
                 fill
                 className="object-cover"
@@ -48,7 +48,7 @@ export default function LuxuryHighlight() {
           <div className="w-full md:w-[400px]">
             <div className="relative w-full h-[500px] mb-4 overflow-hidden">
               <Image
-                src="/joyas/savoir.png"
+                src="/savoir.png"
                 alt="Artesanía Genese"
                 fill
                 className="object-cover"

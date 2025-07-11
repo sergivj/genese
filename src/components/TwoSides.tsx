@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import GirlIvory from '@/public/joyas/girl_ivory2.png';
-import GirlIvory2 from '@/public/joyas/girl_ivory.png';
+import GirlIvory from '@/public/girl_ivory2.png';
+import GirlIvory2 from '@/public/girl_ivory.png';
 import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';

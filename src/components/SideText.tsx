@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import GirlRing from '@/public/joyas/girl_ring.png';
+import GirlRing from '@/public/girl_ring.png';
 import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
 
