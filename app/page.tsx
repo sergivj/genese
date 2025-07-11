@@ -8,14 +8,14 @@ import GirlRing from '@/public/girl_ring.png';
 // import GirlRing2 from '@/public/girl_ring2.png';
 import LuxuryHighlight from '@/src/components/LuxuryHighlight';
 
-import A17 from '@/public/a17.png';
+import A17 from '@/public/A17.png';
 import A17ns from '@/public/A17_ns.png';
-import P1 from '@/public/p1.png';
-import P2 from '@/public/p2.png';
-import P3 from '@/public/p3.png';
-import P1ns from '@/public/p1_ns.png';
-import P2ns from '@/public/p2_ns.png';
-import P3ns from '@/public/p3_ns.png';
+import P1 from '@/public/P1.png';
+import P2 from '@/public/P2.png';
+import P3 from '@/public/P3.png';
+import P1ns from '@/public/P1_ns.png';
+import P2ns from '@/public/P2_ns.png';
+import P3ns from '@/public/P3_ns.png';
 
 
 

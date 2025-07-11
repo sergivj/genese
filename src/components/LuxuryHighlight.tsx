@@ -48,14 +48,14 @@ export default function LuxuryHighlight() {
           <div className="w-full md:w-[400px]">
             <div className="relative w-full h-[500px] mb-4 overflow-hidden">
               <Image
-                src="/savoir.png"
+                src="/key-hands.png"
                 alt="Artesanía Genese"
                 fill
                 className="object-cover"
               />
             </div>
             <h3 className="text-2xl uppercase mb-2 text-genese-dark">
-              El savoir-faire
+              El <span className='italic'>savoir-faire</span>
             </h3>
             <p className="text-xl  mb-4 text-genese-dark">
               La Alta Joyería Genese encarna la técnica y la tradición artesana con precisión atemporal.
