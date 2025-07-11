@@ -6,21 +6,21 @@ import Image from 'next/image';
 
 export default function LuxuryHighlight() {
   return (
-    <div className="flex flex-col w-full font-cormorant bg-[#E0DAC8]">
-      <motion.div className="w-full items-start justify-center bg-black/10 md:py-[2.5%] py-[1%]">
+    <div className="flex flex-col w-full font-cormorant bg-genese-ivory">
+      <motion.div className="w-full items-start justify-center  md:py-[2.5%] py-[1%]">
         <motion.h2
-          className="text-black text-4xl font-bold flex items-center justify-center gap-2"
+          className="text-genese-gold text-4xl font-bold flex items-center justify-center gap-2"
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
           viewport={{ once: true, amount: 0.5 }}
         >
-          <span>Alta joyería</span>
+          <span className='uppercase'>Alta joyería</span>
         </motion.h2>
       </motion.div>
 
       <motion.div
-        className="w-full items-start justify-center bg-black/10"
+        className="w-full items-start justify-center "
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
@@ -37,11 +37,11 @@ export default function LuxuryHighlight() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase mb-2 text-black">Bijoux de Genese</h3>
-            <p className="text-sm text-black mb-4">
+            <h3 className="text-2xl font-bold uppercase mb-2 text-genese-dark">Bijoux de Genese</h3>
+            <p className="text-xl text-genese-dark mb-4">
               En 2025, Genese revolucionó la Alta Joyería con su colección más audaz e inspiradora.
             </p>
-            <a href="#" className="text-sm underline font-semibold hover:text-genese-gold transition text-black">DESCUBRIR</a>
+            <a href="#" className="text-sm underline font-semibold hover:text-genese-gold transition text-genese-gold">DESCUBRIR</a>
           </div>
 
           {/* Columna 2 */}
@@ -54,13 +54,13 @@ export default function LuxuryHighlight() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase mb-2 italic text-black">
+            <h3 className="text-2xl font-bold uppercase mb-2 italic text-genese-dark">
               El savoir-faire
             </h3>
-            <p className="text-sm  mb-4 text-black">
+            <p className="text-xl  mb-4 text-genese-dark">
               La Alta Joyería Genese encarna la técnica y la tradición artesana con precisión atemporal.
             </p>
-            <a href="#" className="text-sm underline font-semibold hover:text-genese-gold transition text-black">DESCUBRIR</a>
+            <a href="#" className="text-sm underline font-semibold hover:text-genese-gold transition text-genese-gold">DESCUBRIR</a>
           </div>
         </div>
 

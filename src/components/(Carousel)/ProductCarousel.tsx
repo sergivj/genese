@@ -5,43 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import SaberMasUnderline from '../SaberMasUnderline';
 
-const products = [
-  {
-    id: 1,
-    name: 'ANILLO GENESE Nº1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: '/joyas/a17.png',
-    icon: '/joyas/a17_ns.png',
-    available: true
-  },
-  
-  {
-    id: 3,
-    name: 'PULSERA GENESE Nº1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: '/joyas/p1.png',
-    icon: '/joyas/p1_ns.png',
-    available: true
-  },
-  {
-    id: 4,
-    name: 'PULSERA GENESE Nº2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: '/joyas/p2.png',
-    icon: '/joyas/p2_ns.png',
-    available: false
-  },
-  {
-    id: 5,
-    name: 'PULSERA GENESE Nº3',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: '/joyas/p3.png',
-    icon: '/joyas/p3_ns.png',
-    available: false
-  },
-];
-
-export default function ProductCarousel() {
+export default function ProductCarousel({products}: {products: any[]}) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = products[activeIndex];
 
