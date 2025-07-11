@@ -79,7 +79,7 @@ export default function ProductCarousel() {
           {products.map((product, index) => (
             <button
               key={product.id}
-              onClick={() => setActiveIndex(index)}
+              onMouseEnter={() => setActiveIndex(index)}
               className={`transition rounded-full overflow-hidden border-2 min-w-[80px] ${
                 index === activeIndex
                   ? 'border-genese-gold scale-100'

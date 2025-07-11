@@ -2,6 +2,11 @@
 import ProductCarousel from '@/src/components/(Carousel)/ProductCarousel';
 import HeroVideo from '@/src/components/(Home)/Hero'
 import SaberMasUnderline from '@/src/components/SaberMasUnderline';
+import SideText from '@/src/components/SideText';
+import TwoSides from '@/src/components/TwoSides';
+import GirlRing from '@/public/joyas/girl_ring.png';
+import GirlRing2 from '@/public/joyas/girl_ring2.png';
+
 
 export default function Home() {
   return (
@@ -20,6 +25,21 @@ export default function Home() {
       <div className="min-h-screen bg-genese-ivory">
         <ProductCarousel />
       </div>
+
+      <TwoSides />
+
+      <SideText
+        title='Anillo Genese 01011'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        image={GirlRing}
+      />
+
+      <SideText
+        imageDirection='right'
+        title='Anillo Genese 01012'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        image={GirlRing2}
+      />
       
     </main>
   );
