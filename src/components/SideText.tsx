@@ -38,7 +38,7 @@ export default function SideText({
       {/* Texto */}
       <div className="relative w-full md:w-1/2 bg-genese-ivory px-6 py-12 md:px-12 md:py-24 flex items-center justify-center">
         <motion.div
-          className="flex flex-col items-center text-center gap-6 max-w-xl"
+          className="flex flex-col items-start text-start gap-6 max-w-2xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}

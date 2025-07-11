@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={cormorant.variable}>
       <Analytics />
-      <body className="bg-genese-beige text-genese-dark relative">
+      <body className="bg-genese-beige font-cormorant text-genese-dark relative">
         <Navbar />
 
         {/* Contenido principal sobre el footer */}

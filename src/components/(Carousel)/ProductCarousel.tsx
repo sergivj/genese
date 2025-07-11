@@ -63,7 +63,7 @@ export default function ProductCarousel() {
         viewport={{ once: true }}
         className="absolute top-8 md:top-15 left-1/2 -translate-x-1/2 z-40 text-center pointer-events-none"
       >
-        <h1 className="text-3xl md:text-4xl font-header1 uppercase text-genese-dark font-cormorant">Nuestros Iconos</h1>
+        <h1 className="text-3xl md:text-4xl font-header1 uppercase text-genese-dark font-bold font-cormorant">Nuestros Iconos</h1>
       </motion.div>
 
       {/* Info lateral */}
