@@ -11,22 +11,35 @@ interface HeroVideoProps {
 
 export default function HeroVideo({ videoSrc, overlay = true, children }: HeroVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
   const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
-    if (video) {
-      const tryPlay = async () => {
-        try {
-          await video.play();
-        } catch (err) {
-          console.warn('❌ Autoplay bloqueado por el navegador: ' + err);
+    const container = containerRef.current;
+    if (!video || !container) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && video.paused) {
+          video.play().catch((err) => {
+            console.warn('❌ No se pudo reproducir:', err);
+          });
+          setIsPaused(false);
+        } else if (!entry.isIntersecting && !video.paused) {
+          video.pause();
+          setIsPaused(true);
         }
-      };
-      tryPlay();
-    }
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(container);
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
-  
 
   const toggleVideo = () => {
     if (!videoRef.current) return;
@@ -41,15 +54,14 @@ export default function HeroVideo({ videoSrc, overlay = true, children }: HeroVi
   };
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section ref={containerRef} className="relative w-full h-screen overflow-hidden">
       {/* Video de fondo */}
       <video
         ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={videoSrc}
-        autoPlay
-        loop
         muted
+        loop
         playsInline
         preload="auto"
       />
