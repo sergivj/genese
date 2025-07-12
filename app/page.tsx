@@ -106,7 +106,7 @@ export default function Home() {
         image={GirlRing2}
       /> */}
 
-    <div className='bg-genese-ivory py-[4%]'>
+    <div className='bg-genese-ivory p-[4%]'>
       <RingViewer />
     </div>
       
