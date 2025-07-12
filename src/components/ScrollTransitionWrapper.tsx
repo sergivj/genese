@@ -25,7 +25,7 @@ export default function ScrollTakeover() {
   const preFooterY = useTransform(scrollYProgress, [0.33, 0.5], ['10%', '0%']);
 
   return (
-    <div ref={containerRef} className="relative h-[300vh] bg-white">
+    <div ref={containerRef} className="relative h-[300vh] bg-genese-ivory">
       {/* Bloque sticky donde ocurre la transición */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {/* Primer componente (SideText) */}

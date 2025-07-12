@@ -33,16 +33,16 @@ export default function PreFooter() {
           ))}
         </div>
 
+        {/* NEWSLETTER */}
         <div className="w-full flex justify-center items-center mt-10 border-b-1 pb-10 border-genese-cream">
-          {/* Hazme una newsletter */}
           <div className="flex flex-col items-center">
-            <h2 className="text-3xl mb-4">Suscríbete a nuestra newsletter</h2>
-            <p className="mb-6 text-lg max-w-[80%]">Recibe las últimas novedades y ofertas exclusivas.</p>
+            <h2 className="text-xl mb-4 uppercase"> Newsletter </h2>
+            <p className="mb-6 text-lg max-w-[55%] text-center">Suscribase a la newsletter y déjese cautivar por las creaciones, el patrimonio y las historias de artesanía de la Maison</p>
             <form className="flex flex-col items-center">
               <input
                 type="email"
                 placeholder="Tu correo electrónico"
-                className="border border-gray-300 rounded p-2 mb-4 w-full max-w-xs"
+                className="border-b border-gray-300 rounded p-2 mb-4 w-full max-w-xs"
               />
               <button
                 type="submit"
