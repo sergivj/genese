@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import GirlRing from '@/public/girl_ring.png';
