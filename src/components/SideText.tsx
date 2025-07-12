@@ -1,9 +1,8 @@
 'use client';
-
-import React from 'react';
-import GirlRing from '@/public/girl_ring.png';
+import React, { useRef, useState, useEffect } from 'react';
+import { motion, useScroll, useTransform, useMotionValueEvent } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
-import { motion } from 'framer-motion';
+import GirlRing from '@/public/girl_ring.png';
 
 interface SideTextProps {
   imageDirection?: 'left' | 'right';
@@ -18,19 +17,37 @@ export default function SideText({
   description,
   image,
 }: SideTextProps) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  });
+
+  const [hasShown, setHasShown] = useState(false);
+
+  // Escuchamos cambios en scrollYProgress
+  useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+    if (latest > 0.4) {
+      setHasShown(true);
+    }
+  });
+
+  // Animaciones solo hasta 40%
+  const opacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
+  const x = useTransform(scrollYProgress, [0, 0.4], [-50, 0]);
+
   return (
     <div
+      ref={ref}
       className={`flex flex-col-reverse md:flex-row bg-genese-ivory ${
         imageDirection === 'right' ? 'md:flex-row-reverse' : ''
       } w-full h-full min-h-full md:min-h-screen font-cormorant`}
     >
       {/* Imagen */}
       <motion.div
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, ease: 'easeOut' }}
-      viewport={{ once: true, amount: 0.5 }}
-      className="relative w-full md:w-1/2 h-64 md:h-auto bg-genese-ivory">
+        style={hasShown ? { opacity: 1, x: 0 } : { opacity, x }}
+        className="relative w-full md:w-1/2 h-64 md:h-auto bg-genese-ivory"
+      >
         <Image
           src={image || GirlRing}
           alt="imagen"

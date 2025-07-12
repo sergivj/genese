@@ -12,7 +12,7 @@ import LuxuryHighlight from '@/src/components/LuxuryHighlight';
 import A17 from '@/public/A17.png';
 import A17ns from '@/public/A17_ns.png';
 import P1 from '@/public/P1.png';
-import P2 from '@/public/P2.png';
+import P2 from '@/public/P2.gif';
 import P3 from '@/public/P3.png';
 import P1ns from '@/public/P1_ns.png';
 import P2ns from '@/public/P2_ns.png';
