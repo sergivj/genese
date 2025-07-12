@@ -34,7 +34,8 @@ export default function SideText({
 
   // Animaciones solo hasta 40%
   const opacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
-  const x = useTransform(scrollYProgress, [0, 0.4], [-50, 0]);
+  const x = useTransform(scrollYProgress, [0, 0.4], ['-100vw', '0%']);
+  const x2 = useTransform(scrollYProgress, [0, 0.4], ['100vw', '0%']);
 
   return (
     <div
@@ -61,10 +62,7 @@ export default function SideText({
       <div className="relative w-full md:w-1/2 bg-genese-ivory px-6 py-12 md:px-12 md:py-24 flex items-center justify-center">
         <motion.div
           className="flex flex-col items-start text-start gap-6 max-w-2xl"
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
-          viewport={{ once: true, amount: 0.5 }}
+          style={hasShown ? { opacity: 1, x: 0 } : { opacity, x: x2 }}
         >
           <motion.h1 className="text-genese-dark text-2xl md:text-4xl font-bold">
             {title}
