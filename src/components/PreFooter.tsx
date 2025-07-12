@@ -1,6 +1,6 @@
 export default function PreFooter() {
     return (
-      <div className="bg-genese-ivory text-black py-25 px-4 h-screen flex flex-col items-start justify-center">
+      <div className="bg-genese-ivory text-black px-4 h-full py-10 flex flex-col items-start justify-center">
         <div className="w-full flex flex-row justify-center items-stretch gap-x-[5%] boder border-y-1 border-genese-cream">
           {[
             {
@@ -26,7 +26,7 @@ export default function PreFooter() {
               <div className="flex flex-col justify-center items-center">
                 <h2 className="text-3xl mb-4 leading-snug max-w-[80%]">{col.title}</h2>
                 <p className="mb-6 text-lg max-w-[80%]">{col.text}</p>
-                <a href={col.href} className="text-genese-gold uppercase hover:underline mt-auto">{col.link}</a>
+                <a href={col.href} className="text-genese-dark uppercase hover:underline mt-auto">{col.link}</a>
               </div>
               
             </div>
@@ -38,17 +38,18 @@ export default function PreFooter() {
           <div className="flex flex-col items-center">
             <h2 className="text-xl mb-4 uppercase"> Newsletter </h2>
             <p className="mb-6 text-lg max-w-[55%] text-center">Suscribase a la newsletter y déjese cautivar por las creaciones, el patrimonio y las historias de artesanía de la Maison</p>
-            <form className="flex flex-col items-center">
+            <form className="flex flex-col items-center w-full text-genese-dark">
               <input
                 type="email"
-                placeholder="Tu correo electrónico"
-                className="border-b border-gray-300 rounded p-2 mb-4 w-full max-w-xs"
-              />
+                className="border-b border-genese-dark text-genese-dark rounded p-2 mb-8 min-w-[70vh] max-w-xs"
+                placeholder="DIRECCIÓN DE CORREO ELECTRÓNICO"
+              >
+              </input>
               <button
                 type="submit"
-                className="bg-genese-gold text-white px-6 py-2 rounded hover:bg-genese-gold-dark transition-colors"
+                className="border border-genese-dark w-max px-10 py-1 "
               >
-                Suscribirse
+                RECIBA LAS NOVEDADES
               </button>
             </form>
             </div>

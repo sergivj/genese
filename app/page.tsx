@@ -2,10 +2,10 @@
 import ProductCarousel from '@/src/components/(Carousel)/ProductCarousel';
 import HeroVideo from '@/src/components/(Home)/Hero'
 import SaberMasUnderline from '@/src/components/SaberMasUnderline';
-// import SideText from '@/src/components/SideText';
+import SideText from '@/src/components/SideText';
 // import TwoSides from '@/src/components/TwoSides';
 // import GirlRing from '@/public/girl_ring.png';
-// import GirlRedHair from '@/public/girl_redhair.png';
+import GirlRedHair from '@/public/girl_redhair.png';
 // import GirlRing2 from '@/public/girl_ring2.png';
 import LuxuryHighlight from '@/src/components/LuxuryHighlight';
 
@@ -18,8 +18,7 @@ import P1ns from '@/public/P1_ns.png';
 import P2ns from '@/public/P2_ns.png';
 import P3ns from '@/public/P3_ns.png';
 // import RingViewer from '@/src/components/RingViewer';
-// import PreFooter from '@/src/components/PreFooter';
-import ScrollTransitionWrapper from '@/src/components/ScrollTransitionWrapper';
+import PreFooter from '@/src/components/PreFooter';
 
 
 
@@ -95,7 +94,13 @@ export default function Home() {
 
       {/* <TwoSides /> */}
 
-      <ScrollTransitionWrapper />
+      <SideText
+        title='Anillo Genese 01011'
+        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        image={GirlRedHair}
+      />
+
+      <PreFooter />
 
       {/* <SideText
         imageDirection='right'
