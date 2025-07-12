@@ -4,7 +4,8 @@ import HeroVideo from '@/src/components/(Home)/Hero'
 import SaberMasUnderline from '@/src/components/SaberMasUnderline';
 import SideText from '@/src/components/SideText';
 // import TwoSides from '@/src/components/TwoSides';
-import GirlRing from '@/public/girl_ring.png';
+// import GirlRing from '@/public/girl_ring.png';
+import GirlRedHair from '@/public/girl_redhair.png';
 // import GirlRing2 from '@/public/girl_ring2.png';
 import LuxuryHighlight from '@/src/components/LuxuryHighlight';
 
@@ -94,7 +95,7 @@ export default function Home() {
       <SideText
         title='Anillo Genese 01011'
         description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-        image={GirlRing}
+        image={GirlRedHair}
       />
 
       {/* <SideText

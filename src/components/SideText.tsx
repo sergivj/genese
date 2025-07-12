@@ -20,27 +20,32 @@ export default function SideText({
 }: SideTextProps) {
   return (
     <div
-      className={`flex flex-col-reverse md:flex-row ${
+      className={`flex flex-col-reverse md:flex-row bg-genese-ivory ${
         imageDirection === 'right' ? 'md:flex-row-reverse' : ''
       } w-full h-full min-h-full md:min-h-screen font-cormorant`}
     >
       {/* Imagen */}
-      <div className="relative w-full md:w-1/2 h-64 md:h-auto">
+      <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.5 }}
+      className="relative w-full md:w-1/2 h-64 md:h-auto bg-genese-ivory">
         <Image
           src={image || GirlRing}
           alt="imagen"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center bg-genese-ivory"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
-      </div>
+      </motion.div>
 
       {/* Texto */}
       <div className="relative w-full md:w-1/2 bg-genese-ivory px-6 py-12 md:px-12 md:py-24 flex items-center justify-center">
         <motion.div
           className="flex flex-col items-start text-start gap-6 max-w-2xl"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.5 }}
         >

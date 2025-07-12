@@ -26,7 +26,7 @@ export default function LuxuryHighlight() {
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <div className="gap-10 w-full flex flex-col md:flex-row justify-center items-start px-6 md:px-20 py-4 pb-12">
+        <div className="gap-10 w-full flex flex-col md:flex-row justify-center items-start px-6 md:px-20 py-4 pb-[5%]">
           {/* Columna 1 */}
           <div className="w-full md:w-[400px]">
             <div className="relative w-full h-[500px] mb-4 overflow-hidden">
