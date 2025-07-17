@@ -38,6 +38,12 @@
 .font-cormorant {
   font-family: 'Cormorant Garamond', serif;
 }
+
+.font-lato {
+  font-family: 'Lato', serif;
+}
+
+
 body {
   @apply font-serif;
 }

@@ -50,7 +50,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${translateClass}`}>
+      <nav className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 font-cormorant ${translateClass}`}>
         <div className={`w-full transition-colors duration-300 ease-in-out ${bgClass}`}>
           <div className="max-w-full mx-auto px-3 md:px-12 py-4 grid grid-cols-3 items-center">
             {/* Menú lateral */}

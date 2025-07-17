@@ -65,7 +65,7 @@ export default function Home() {
     <main>
       <HeroVideo videoSrc="/hero.mp4" overlay={false}>
         <div className="text-white flex-col flex gap-y-1">
-          <h1 className="font-h1 text-5xl uppercase tracking-wide">
+          <h1 className="font-h1 text-5xl uppercase tracking-wide font-cormorant font-semibold">
             Genèse
           </h1>
             <p className="font-body text-xl pt-2 max-w-[80%] ">Impulsa tu presencia digital desde el primer paso. Impulsa tu presencia digital desde el primer paso</p>
@@ -80,7 +80,7 @@ export default function Home() {
 
       <HeroVideo videoSrc="/third.mp4" overlay={false}>
         <div className="text-white flex-col flex gap-y-1">
-          <h1 className="font-h1 text-5xl uppercase tracking-wide">
+          <h1 className="font-h1 text-5xl uppercase tracking-wide font-cormorant font-semibold">
             Una evolución audaz
           </h1>
             <p className="font-body text-xl pt-2 max-w-[40%] ">Una joya que trasciende el paso del tiempo y las tendencias. Descubra el espíritu innovador con miras al futuro de la emblemática colección de joyas de Genese</p>

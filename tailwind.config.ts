@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       sans: ['var(--font-cormorant)', 'ui-sans-serif', 'system-ui'],
+      serif: ['var(--font-lato)', 'ui-sans-serif', 'system-ui'],
     }
   },
   plugins: [],

@@ -38,7 +38,7 @@ export default function ProductCarousel({products}: {products: {
 
       {/* Info lateral */}
       <div className="max-w-xl w-full flex flex-col items-start text-start">
-        <h2 className="text-2xl md:text-4xl font-header1 uppercase mb-4">Nuestros Iconos</h2>
+        <h2 className="text-2xl md:text-4xl uppercase mb-4 font-cormorant">Nuestros Iconos</h2>
         <p className="text-sm md:text-base font-body mb-6 opacity-70">{active.description}</p>
         <div className='pb-5'>
           <SaberMasUnderline text='Conoce su historia' color='bg-genese-gold' textSize='text-base md:text-lg' textColor='text-genese-gold' />
@@ -86,7 +86,7 @@ export default function ProductCarousel({products}: {products: {
   </div>
 
   {/* Nombre y disponibilidad */}
-  <h1 className="text-center text-2xl md:text-4xl mt-4 text-genese-gold">{active.name}</h1>
+  <h1 className="text-center text-2xl md:text-4xl mt-4 text-genese-gold font-cormorant">{active.name}</h1>
   {!active.available && (
     <p className="text-center text-xs mt-2 text-genese-gold">
       * No disponible por el momento

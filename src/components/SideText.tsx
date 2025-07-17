@@ -42,7 +42,7 @@ export default function SideText({
       ref={ref}
       className={`flex flex-col-reverse md:flex-row bg-genese-dark ${
         imageDirection === 'right' ? 'md:flex-row-reverse' : ''
-      } w-full h-full min-h-full md:min-h-screen font-cormorant`}
+      } w-full h-full min-h-full md:min-h-screen`}
     >
       {/* Imagen */}
       <motion.div
@@ -64,7 +64,7 @@ export default function SideText({
           className="flex flex-col items-start text-start gap-6 max-w-2xl"
           style={hasShown ? { opacity: 1, x: 0 } : { opacity, x: x2 }}
         >
-          <motion.h1 className="text-genese-beige text-2xl md:text-4xl font-bold">
+          <motion.h1 className="text-genese-beige text-2xl md:text-4xl font-semibold font-cormorant">
             {title}
           </motion.h1>
           <motion.p className="text-genese-beige text-lg md:text-xl font-medium">
