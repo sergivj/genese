@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
@@ -38,7 +40,7 @@ export default function ScrollSplitRight({
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className={`text-gray-600 overflow-hidden ${!expanded ? 'line-clamp-3' : ''}`}
+            className={` overflow-hidden ${!expanded ? 'line-clamp-3' : ''}`}
           >
             {description}
           </motion.p>
@@ -48,7 +50,7 @@ export default function ScrollSplitRight({
           onClick={() => setExpanded(!expanded)}
           className="text-sm mt-2 underline text-genese-dark"
         >
-          {expanded ? 'Leer menos' : 'Leer más'}
+          {expanded ? <p className='text-genese-dark'>Leer menos</p> : <p className='text-genese-dark'>Leer más</p>}
         </button>
 
         <EngravingInput

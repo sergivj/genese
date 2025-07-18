@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 'use client';
 
 import { PenLine, ChevronRight } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { HorizontalBlurShader } from 'three-stdlib';
 
 export default function EngravingInput({ engravingText, setEngravingText, editing, setEditing }: any) {
   return (
@@ -15,7 +16,7 @@ export default function EngravingInput({ engravingText, setEngravingText, editin
           animate={editing ? { rotate: [0, -5, 5, -5, 0] } : {}}
           transition={{ duration: 0.4 }}
         >
-          <PenLine />
+          <PenLine color='#545454' />
         </motion.div>
 
         <div className="flex items-start justify-center flex-col w-full">

@@ -10,7 +10,7 @@ export default function RingViewer({text}: { text: string }) {
   return (
     <>
       <div className="w-full h-[500px]">
-        <Canvas camera={{ position: [2, 2, 2], fov: 2 }}>
+        <Canvas camera={{ position: [0, 0, 2], fov: 3 }}>
           <ambientLight intensity={0.6} />
           <directionalLight position={[3, 3, 3]} />
           <RingModel />
