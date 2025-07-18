@@ -1,7 +1,7 @@
 import Navbar from "@/src/components/(Navbars)/Navbar";
 import Footer from "@/src/components/(Footer)/Footer";
 import "./globals.css";
-import { Cormorant_Garamond, Lato } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 
 const cormorant = Cormorant_Garamond({
@@ -9,12 +9,6 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-cormorant",
 });
-
-const lato = Lato({
-  weight: ["400", "700"],
-  subsets: ["latin"],
-  variable: "--font-cormorant",
-})
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
