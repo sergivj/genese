@@ -1,22 +1,23 @@
-'use client';
+"use client";
 
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import RingModel from './RingModel';
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import RingModel from "./RingModel";
+import RingText from "./RingText";
 
-export default function RingViewer() {
+
+export default function RingViewer({text}: { text: string }) {
   return (
-    <div className="w-full h-[500px]">
-      <Canvas camera={{ position: [2, 2, 2], fov: 2 }}>
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[3, 3, 3]} />
-        <RingModel />
-        <OrbitControls
-          enableZoom={false}   // 👈 esto desactiva el zoom con scroll
-          enablePan={false}
-          rotateSpeed={0.6}
-        />
-      </Canvas>
-    </div>
+    <>
+      <div className="w-full h-[500px]">
+        <Canvas camera={{ position: [2, 2, 2], fov: 2 }}>
+          <ambientLight intensity={0.6} />
+          <directionalLight position={[3, 3, 3]} />
+          <RingModel />
+          <RingText text={text} />
+          <OrbitControls enableZoom={false} enablePan={false} rotateSpeed={0.6} />
+        </Canvas>
+      </div>
+    </>
   );
 }
