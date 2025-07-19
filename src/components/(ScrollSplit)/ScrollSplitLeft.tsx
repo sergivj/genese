@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import RingViewer from '../RingViewer';
 
-const images = ['/diamons.png', '/A14.png', '/A15.png', '/A16.png', '/A17.png'];
+const images = ['/diamons.png', '/A14.png', '/A15.png', '/A16.png', '/A17.png', '/P1.png', '/P2.png', '/P3.png', '/savoir.png'];
 
 export default function ScrollSplitLeft({ engravingText }: { engravingText: string }) {
   return (

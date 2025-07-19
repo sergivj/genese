@@ -8,6 +8,7 @@ import EngravingInput from './EngravingInput';
 import SizeSelector from './SizeSelector';
 import PriceSection from './PriceSection';
 import ContactOptions from './ContactOptions';
+import Share from './Share';
 
 export default function ScrollSplitRight({
   opacity,
@@ -53,6 +54,8 @@ export default function ScrollSplitRight({
           {expanded ? <p className='text-genese-dark'>Leer menos</p> : <p className='text-genese-dark'>Leer más</p>}
         </button>
 
+        <SizeSelector />
+
         <EngravingInput
           engravingText={engravingText}
           setEngravingText={setEngravingText}
@@ -60,9 +63,10 @@ export default function ScrollSplitRight({
           setEditing={setEditing}
         />
 
-        <SizeSelector />
+        
         <PriceSection />
         <ContactOptions />
+        <Share />
       </motion.div>
     </div>
   );

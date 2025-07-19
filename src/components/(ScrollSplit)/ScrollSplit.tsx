@@ -14,7 +14,7 @@ export default function ScrollSplit() {
   const [editing, setEditing] = useState(false);
 
   return (
-    <div ref={containerRef} className="relative flex w-full min-h-screen bg-genese-ivory pl-[8%] pr-[1%] mt-[4%]">
+    <div ref={containerRef} className="relative flex w-full min-h-screen bg-genese-ivory pl-[8%] pr-[1%]">
       <ScrollSplitLeft engravingText={engravingText} />
       <ScrollSplitRight
         opacity={opacity}

@@ -1,7 +1,7 @@
 export default function PriceSection() {
     return (
       <>
-        <div className='flex gap-x-1 items-end mb-10'>
+        <div className='flex gap-x-1 items-end my-5'>
           <p className='text-2xl font-bold'>€8500</p>
           <p>incl. IVA</p>
         </div>
