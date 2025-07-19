@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-
 export default function PieceDetails() {
   return (
     <section className="py-10 px-6 md:px-12 text-center">
@@ -12,11 +10,13 @@ export default function PieceDetails() {
         {/* Diamantes */}
         <div className="flex-1 flex flex-col items-start text-start">
           <div className="relative h-56 w-[400px]">
-            <Image
-              src="/diamons.png"
-              alt="Diamante"
-              fill
-              className="rounded-md object-cover w-full"
+            <video
+              src="/diamons.mp4"
+              className="rounded-md object-cover w-full h-full"
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
           <h3 className="mt-4 font-semibold uppercase text-lg tracking-widest">Diamantes</h3>
@@ -28,12 +28,14 @@ export default function PieceDetails() {
 
         {/* Material */}
         <div className="flex-1 flex flex-col items-start text-start">
-          <div className="relative  h-56 w-[400px]">
-            <Image
-              src="/diamons.png"
-              alt="Oro amarillo"
-              fill
-              className="rounded-md object-cover w-full"
+          <div className="relative h-56 w-[400px]">
+            <video
+              src="/gold.mp4"
+              className="rounded-md object-cover w-full h-full"
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
           <h3 className="mt-4 font-semibold uppercase text-lg tracking-widest">Material</h3>

@@ -4,6 +4,8 @@
 
 import ScrollSplit from "@/src/components/(ScrollSplit)/ScrollSplit";
 import PieceDetails from "@/src/components/PieceDetails";
+import TextSalient from "@/src/components/TextSalient";
+import TextVideo from "@/src/components/TextVideo";
 
 export default function Page() {
     return (
@@ -11,6 +13,10 @@ export default function Page() {
         <ScrollSplit />
 
         <PieceDetails />
+
+        <TextSalient />
+
+        <TextVideo />
         </main>
     );
 }
