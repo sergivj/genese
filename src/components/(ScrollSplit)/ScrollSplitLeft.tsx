@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import RingViewer from '../RingViewer';
 
-const images = ['/diamons.png', '/A14.png', '/A15.png', '/A16.png', '/A17.png', '/P1.png', '/P2.png', '/P3.png', '/savoir.png'];
+const images = ['/diamons.png', '/A14.png', '/A15.png', '/A16.png', '/A17.png', '/P1.png', '/P2.png', '/P3.png', '/A14.png', '/A14.png', '/A15.png', '/A16.png', '/A17.png'];
 
 export default function ScrollSplitLeft({ engravingText }: { engravingText: string }) {
   return (
     <div className="w-1/2">
-      <div className="flex flex-col space-y-2 py-20">
+      <div className="flex flex-col space-y-2 pt-20">
         <motion.div key={0} className="w-full h-[50vh] relative bg-white">
           <RingViewer text={engravingText} />
         </motion.div>
