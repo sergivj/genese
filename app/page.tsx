@@ -70,7 +70,7 @@ export default function Home() {
           </h1>
             <p className="font-body text-xl pt-2 max-w-[80%] ">Impulsa tu presencia digital desde el primer paso. Impulsa tu presencia digital desde el primer paso</p>
             <div className="flex items-center gap-2 mt-4 w-full">
-              <SaberMasUnderline />
+              <SaberMasUnderline url='/products/ring-1' />
             </div>
         </div>
       </HeroVideo>

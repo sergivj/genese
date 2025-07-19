@@ -29,6 +29,9 @@ export default function ScrollSplitRight({
   Un diseño emblemático, símbolo de amor eterno y pasión, diseñado para ser llevado todos los días 
   como una declaración personal de afecto y compromiso. El cierre con tornillo evoca la fijación eterna del amor.`;
 
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="w-1/2 sticky top-0 h-max flex items-start pt-10 justify-center pr-[8%] pl-[1%]">
       <motion.div style={{ opacity }} className="w-3/4 p-8 text-start">
@@ -54,7 +57,7 @@ export default function ScrollSplitRight({
           {expanded ? <p className='text-genese-dark'>Leer menos</p> : <p className='text-genese-dark'>Leer más</p>}
         </button>
 
-        <SizeSelector />
+        <SizeSelector selectedSize={selectedSize} setSelectedSize={setSelectedSize} isOpen={isOpen} setIsOpen={setIsOpen} />
 
         <EngravingInput
           engravingText={engravingText}
@@ -64,7 +67,7 @@ export default function ScrollSplitRight({
         />
 
         
-        <PriceSection />
+        <PriceSection selectedSize={selectedSize} setIsOpen={setIsOpen} />
         <ContactOptions />
         <Share />
       </motion.div>

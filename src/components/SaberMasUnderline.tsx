@@ -8,11 +8,13 @@ export default function SaberMasUnderline({
   color = 'bg-genese-ivory', 
   textSize = 'text-xl',
   textColor = 'text-genese-ivory',
+  url = '#'
 }: {
   text?: string, 
   color?: string, 
   textSize?: string
   textColor?: string
+  url?: string
 }) {
   const [showLine, setShowLine] = useState(true);
   const [direction, setDirection] = useState<'left' | 'right'>('left');
@@ -30,7 +32,7 @@ export default function SaberMasUnderline({
   }, []);
 
   return (
-    <div className="flex flex-row justify-start items-center pt-2 gap-1 cursor-pointer relative w-max">
+    <div className="flex flex-row justify-start items-center pt-2 gap-1 cursor-pointer relative w-max" onClick={()=>window.location.href=url}>
       <p className={`font-body ${textSize} ${textColor} pt-4 w-full pb-1`}>{text}</p>
 
       {/* Línea animada */}
