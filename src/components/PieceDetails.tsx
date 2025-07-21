@@ -1,8 +1,15 @@
 'use client';
+import { motion } from 'framer-motion';
 
 export default function PieceDetails() {
   return (
     <section className="py-10 px-6 md:px-12 text-center">
+       <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+        viewport={{ once: true, amount: 0.5 }}
+      >
       <h2 className="text-3xl font-semibold tracking-wide uppercase">Detalles de la pieza</h2>
       <p className="uppercase mt-2 underline underline-offset-4 text-sm tracking-wide">Consejos de mantenimiento</p>
 
@@ -19,7 +26,7 @@ export default function PieceDetails() {
               playsInline
             />
           </div>
-          <h3 className="mt-4 font-semibold uppercase text-lg tracking-widest">Diamantes</h3>
+          <h3 className="mt-4 font-semibold uppercase text-lg tracking-widest">Diamantes sinteticos</h3>
           <p className="text-lg mt-2">
             24 diamantes talla brillante con un total de 0,39 quilate<br />
             Las características de cada pieza pueden variar**
@@ -38,10 +45,11 @@ export default function PieceDetails() {
               playsInline
             />
           </div>
-          <h3 className="mt-4 font-semibold uppercase text-lg tracking-widest">Material</h3>
+          <h3 className="mt-4 font-semibold uppercase text-lg tracking-widest">Oro 18k reciclado</h3>
           <p className="text-lg mt-2">Oro amarillo de 18 quilates</p>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 }
