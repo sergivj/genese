@@ -7,7 +7,7 @@ export default function TextVideo() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: true, amount: 0.5 }}
-        className="flex w-full py-10 pl-6 md:pl-[5%] gap-x-14"
+        className="flex w-full py-[5%] pl-6 md:pl-[5%] gap-x-14"
       >
 
       <section className=" text-start w-1/2">
